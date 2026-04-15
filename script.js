@@ -34,8 +34,16 @@ var translations = {
     hlBath:     'SENSATIA Badprodukte',
     galleryTitle: 'Galerie',
     tabPool:      'Pool',
-    tabBedrooms:  'Schlafzimmer',
-    tabBathrooms: 'Badezimmer',
+    tabBed1:      'Schlafzimmer 1',
+    tabBed2:      'Schlafzimmer 2',
+    tabBed3:      'Schlafzimmer 3',
+    tabBed4:      'Schlafzimmer 4',
+    tabBed5:      'Schlafzimmer 5',
+    tabBath1:     'Badezimmer 1',
+    tabBath2:     'Badezimmer 2',
+    tabBath3:     'Badezimmer 3',
+    tabBath4:     'Badezimmer 4',
+    tabBath5:     'Badezimmer 5',
     tabLiving:    'Wohnzimmer',
     tabKitchen:   'Küche',
     tabBalcony:   'Balkon',
@@ -84,8 +92,16 @@ var translations = {
     hlBath:     'SENSATIA bath products',
     galleryTitle: 'Gallery',
     tabPool:      'Pool',
-    tabBedrooms:  'Bedrooms',
-    tabBathrooms: 'Bathrooms',
+    tabBed1:      'Bedroom 1',
+    tabBed2:      'Bedroom 2',
+    tabBed3:      'Bedroom 3',
+    tabBed4:      'Bedroom 4',
+    tabBed5:      'Bedroom 5',
+    tabBath1:     'Bathroom 1',
+    tabBath2:     'Bathroom 2',
+    tabBath3:     'Bathroom 3',
+    tabBath4:     'Bathroom 4',
+    tabBath5:     'Bathroom 5',
     tabLiving:    'Living Room',
     tabKitchen:   'Kitchen',
     tabBalcony:   'Balcony',
@@ -252,29 +268,45 @@ var galleryData = {
     'Fotos/Pool/b2ca2f22-c679-4446-9f8c-cbde3a71f62a.avif',
     'Fotos/Pool/e7352dff-580c-4aad-ba13-9299125f0978.webp'
   ],
-  'Schlafzimmer': [
+  'Schlafzimmer 1': [
     'Fotos/Schlafzimmer 1/041cee32-7882-4ea0-a1a4-9f57a1a18df3.avif',
     'Fotos/Schlafzimmer 1/0840d8b9-1a24-4f13-8d07-d97c627d5aaa.avif',
-    'Fotos/Schlafzimmer 1/a7a34bbd-0f4b-464b-9296-eae9e656415d.avif',
+    'Fotos/Schlafzimmer 1/a7a34bbd-0f4b-464b-9296-eae9e656415d.avif'
+  ],
+  'Schlafzimmer 2': [
     'Fotos/Schlafzimmer 2/7261e569-b5e2-4a43-8e6c-756aa1da4026.avif',
-    'Fotos/Schlafzimmer 2/a676377d-3064-4cd5-97f6-4facc23bff98.avif',
+    'Fotos/Schlafzimmer 2/a676377d-3064-4cd5-97f6-4facc23bff98.avif'
+  ],
+  'Schlafzimmer 3': [
     'Fotos/Schlafzimmer 3/986722ae-55bb-4733-be3b-5f5116d6fdde.avif',
-    'Fotos/Schlafzimmer 3/b03bf9f2-1820-49c6-b757-d7e307ba3f3a.avif',
+    'Fotos/Schlafzimmer 3/b03bf9f2-1820-49c6-b757-d7e307ba3f3a.avif'
+  ],
+  'Schlafzimmer 4': [
     'Fotos/Schlafzimmer 4/08ecf833-7622-4c7c-9ec2-42c2a95087fa.avif',
-    'Fotos/Schlafzimmer 4/b90c6e7b-1be9-4c9a-af58-1a30d0b584a2.avif',
+    'Fotos/Schlafzimmer 4/b90c6e7b-1be9-4c9a-af58-1a30d0b584a2.avif'
+  ],
+  'Schlafzimmer 5': [
     'Fotos/Schlafzimmer 5/11a0247a-0036-4ff4-9136-073bb22f6c10.avif',
     'Fotos/Schlafzimmer 5/796e574e-e0f2-4adc-8488-43c422bf60e7.avif'
   ],
-  'Badezimmer': [
+  'Badezimmer 1': [
     'Fotos/Badezimmer 1/203e88d1-de09-4076-a8a4-d9a7bf88f7ae.avif',
     'Fotos/Badezimmer 1/4839ac3a-24af-45b3-a514-3a549f57cd85.avif',
-    'Fotos/Badezimmer 1/8f028d79-e65d-4890-a6c3-5f3a32717bc0.avif',
+    'Fotos/Badezimmer 1/8f028d79-e65d-4890-a6c3-5f3a32717bc0.avif'
+  ],
+  'Badezimmer 2': [
     'Fotos/Badezimmer 2/69672a09-f139-4b91-9661-e5dde9417266.avif',
-    'Fotos/Badezimmer 2/cadc818d-62bb-4e39-83fe-9a122a334972.avif',
+    'Fotos/Badezimmer 2/cadc818d-62bb-4e39-83fe-9a122a334972.avif'
+  ],
+  'Badezimmer 3': [
     'Fotos/Badezimmer 3/7467b1fe-c139-4432-aaca-96e4eb08a6ef.avif',
-    'Fotos/Badezimmer 3/85e98184-ac77-4a07-bc89-790dcce788ba.avif',
+    'Fotos/Badezimmer 3/85e98184-ac77-4a07-bc89-790dcce788ba.avif'
+  ],
+  'Badezimmer 4': [
     'Fotos/Badezimmer 4/22625a84-47fc-45a2-bb04-72770e2fb992.avif',
-    'Fotos/Badezimmer 4/cf3b594c-a86c-474e-a971-2bae090541d3.avif',
+    'Fotos/Badezimmer 4/cf3b594c-a86c-474e-a971-2bae090541d3.avif'
+  ],
+  'Badezimmer 5': [
     'Fotos/Badezimmer 5/c60ef1cb-4df7-4197-9f33-17c23119fb90.jpeg',
     'Fotos/Badezimmer 5/f1196fba-deda-4649-b3ca-0ae2d41f4def.jpeg'
   ],
@@ -315,7 +347,7 @@ var galleryCaption = null;
 
 function updateGalleryCaption() {
   if (!galleryCaption) return;
-  if (currentTab === 'Schlafzimmer') {
+  if (currentTab.indexOf('Schlafzimmer') === 0) {
     galleryCaption.textContent = translations[currentLang]['galleryBedroomCaption'];
     galleryCaption.style.display = '';
   } else {
