@@ -380,6 +380,56 @@ button {
   line-height: 1.8;
 }
 
+/* About details */
+.about__details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.about__detail {
+  background: var(--white);
+  padding: var(--space-lg);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.about__detail-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  margin-bottom: var(--space-sm);
+  color: var(--charcoal);
+}
+
+.about__detail p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .about__details {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
+
+/* Location secondary row */
+.location__pois--secondary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .location__pois--secondary {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
 /* Facts row */
 .facts {
   display: flex;
