@@ -418,7 +418,7 @@ button {
 /* Location secondary row */
 .location__pois--secondary {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
   margin-top: var(--space-lg);
 }
