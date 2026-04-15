@@ -447,8 +447,10 @@ button {
 }
 
 .highlight__icon {
-  font-size: 1.5rem;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
+  color: var(--olive);
 }
 
 /* ────────────────────────────────────────────
