@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahimsa Villa Uluwatu — Bali</title>
+  <meta name="description" content="5-Zimmer-Villa mit atemberaubendem Meerblick in Uluwatu, Bali. Privatpool, 10 Gäste, tropisches Paradies.">
+  <meta property="og:title" content="Ahimsa Villa Uluwatu — Bali">
+  <meta property="og:description" content="5-Bedroom villa with stunning ocean views in Uluwatu, Bali. Private pool, 10 guests.">
+  <meta property="og:image" content="Fotos/Pool/677680f4-77d4-4486-b2b5-eb1434075351.avif">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">Ahimsa Villa</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" data-i18n="navAbout">Über die Villa</a></li>
+        <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
+        <li><a href="#location" data-i18n="navLocation">Lage</a></li>
+        <li><a href="#reviews" data-i18n="navReviews">Bewertungen</a></li>
+        <li><a href="https://www.airbnb.de/rooms/1451115331863837326" target="_blank" rel="noopener" class="nav__cta" data-i18n="navBook">Buchen</a></li>
+      </ul>
+      <button class="nav__lang" id="langToggle">
+        <span class="nav__lang-option nav__lang-option--active" data-lang="de">DE</span>
+        <span class="nav__lang-divider">|</span>
+        <span class="nav__lang-option" data-lang="en">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" style="background-image: url('Fotos/Pool/677680f4-77d4-4486-b2b5-eb1434075351.avif')"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Ahimsa Villa</h1>
+      <p class="hero__tagline" data-i18n="heroTagline">Dein tropischer Rückzugsort in Uluwatu, Bali</p>
+      <a href="https://www.airbnb.de/rooms/1451115331863837326" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="heroBtn">Auf Airbnb buchen</a>
+    </div>
+    <div class="hero__scroll">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section__title" data-i18n="aboutTitle">Über die Villa</h2>
+      <p class="about__intro" data-i18n="aboutIntro">Gönn dir eine geräumige Villa mit 5 Schlafzimmern, Panoramablick auf den Ozean und lebendiger tropischer Surf-Atmosphäre. Entspanne am extragroßen Privatpool, genieße goldene Sonnenuntergänge vom Balkon oder mach es dir im gemütlichen Wohnzimmer bequem.</p>
+
+      <div class="facts">
+        <div class="fact">
+          <svg class="fact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="fact__value">10</span>
+          <span class="fact__label" data-i18n="factGuests">Gäste</span>
+        </div>
+        <div class="fact">
+          <svg class="fact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7"/><path d="M21 7H3l2-4h14l2 4z"/><path d="M12 4v3"/></svg>
+          <span class="fact__value">5</span>
+          <span class="fact__label" data-i18n="factBedrooms">Schlafzimmer</span>
+        </div>
+        <div class="fact">
+          <svg class="fact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"/><path d="M6 12V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v7"/><path d="M5 17v3"/><path d="M19 17v3"/></svg>
+          <span class="fact__value">5.5</span>
+          <span class="fact__label" data-i18n="factBathrooms">Badezimmer</span>
+        </div>
+        <div class="fact">
+          <svg class="fact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6v12"/><path d="M2 12h20"/></svg>
+          <span class="fact__value" data-i18n="factPoolVal">Privat</span>
+          <span class="fact__label">Pool</span>
+        </div>
+        <div class="fact">
+          <svg class="fact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span class="fact__value" data-i18n="factViewVal">Ozean</span>
+          <span class="fact__label" data-i18n="factView">Meerblick</span>
+        </div>
+        <div class="fact">
+          <svg class="fact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+          <span class="fact__value">96</span>
+          <span class="fact__label">Mbit/s WLAN</span>
+        </div>
+      </div>
+
+      <div class="highlights">
+        <div class="highlight">
+          <span class="highlight__icon">&#x1F30A;</span>
+          <span data-i18n="hlOcean">Panorama-Ozeanblick</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__icon">&#x1F3CA;</span>
+          <span data-i18n="hlPool">Extragroßer Privatpool + Kinderbereich</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__icon">&#x1F3A4;</span>
+          <span data-i18n="hlKaraoke">55" TV mit Karaoke-System</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__icon">&#x2615;</span>
+          <span data-i18n="hlCoffee">Nespresso-Kaffeemaschine</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__icon">&#x1F374;</span>
+          <span data-i18n="hlDining">Outdoor-Dining &amp; Pavillon</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__icon">&#x2744;</span>
+          <span data-i18n="hlAC">Klimaanlage in allen Zimmern</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__icon">&#x1F697;</span>
+          <span data-i18n="hlParking">Kostenloser Parkplatz</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__icon">&#x1F6C1;</span>
+          <span data-i18n="hlBath">SENSATIA Badprodukte</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery section section--alt" id="gallery">
+    <div class="container">
+      <h2 class="section__title" data-i18n="galleryTitle">Galerie</h2>
+      <div class="gallery__tabs" id="galleryTabs">
+        <button class="gallery__tab gallery__tab--active" data-tab="Pool" data-i18n="tabPool">Pool</button>
+        <button class="gallery__tab" data-tab="Schlafzimmer" data-i18n="tabBedrooms">Schlafzimmer</button>
+        <button class="gallery__tab" data-tab="Badezimmer" data-i18n="tabBathrooms">Badezimmer</button>
+        <button class="gallery__tab" data-tab="Wohnzimmer" data-i18n="tabLiving">Wohnzimmer</button>
+        <button class="gallery__tab" data-tab="Küche" data-i18n="tabKitchen">Küche</button>
+        <button class="gallery__tab" data-tab="Balkon" data-i18n="tabBalcony">Balkon</button>
+        <button class="gallery__tab" data-tab="Terrasse" data-i18n="tabTerrace">Terrasse</button>
+        <button class="gallery__tab" data-tab="Essbereich" data-i18n="tabDining">Essbereich</button>
+      </div>
+      <div class="gallery__grid" id="galleryGrid">
+        <!-- Populated by JS using safe DOM methods -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <button class="lightbox__next" id="lightboxNext" aria-label="Next">&#10095;</button>
+  </div>
+
+  <!-- Location -->
+  <section class="location section" id="location">
+    <div class="container">
+      <h2 class="section__title" data-i18n="locationTitle">Lage</h2>
+      <p class="location__intro" data-i18n="locationIntro">Uluwatu liegt an der südwestlichen Spitze Balis und ist bekannt für atemberaubende Klippen, erstklassige Surfspots und unvergessliche Sonnenuntergänge. Die Villa ist nur 30 Autominuten vom internationalen Flughafen Ngurah Rai entfernt.</p>
+      <div class="location__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63187.09169498196!2d115.06!3d-8.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25a0a0bae4bf7%3A0x5030bfbca832f70!2sUluwatu%2C%20Bali!5e0!3m2!1sde!2sid!4v1"
+          width="100%" height="400" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Uluwatu, Bali - Map"></iframe>
+      </div>
+      <div class="location__pois">
+        <div class="location__col">
+          <h3 class="location__col-title">
+            <svg class="location__col-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 17l3-3 4 4 6-8 7 7"/></svg>
+            <span data-i18n="locBeaches">Strände</span>
+          </h3>
+          <ul class="location__list">
+            <li>Suluban Beach <span class="location__time">9 min</span></li>
+            <li>Uluwatu Beach <span class="location__time">9 min</span></li>
+            <li>Padang Padang <span class="location__time">10 min</span></li>
+            <li>Nyang Nyang Beach <span class="location__time">12 min</span></li>
+          </ul>
+        </div>
+        <div class="location__col">
+          <h3 class="location__col-title">
+            <svg class="location__col-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 22V18L3 13V8l5 3V2l4 3 4-3v9l5-3v5l-5 5v4"/></svg>
+            <span data-i18n="locClubs">Beach Clubs</span>
+          </h3>
+          <ul class="location__list">
+            <li>El Kabron <span class="location__time">17 min</span></li>
+            <li>Omnia Dayclub <span class="location__time">18 min</span></li>
+            <li>Savaya <span class="location__time">18 min</span></li>
+            <li>Sunday's Beach Club <span class="location__time">19 min</span></li>
+            <li>Karma Kandara <span class="location__time">23 min</span></li>
+          </ul>
+        </div>
+        <div class="location__col">
+          <h3 class="location__col-title">
+            <svg class="location__col-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <span data-i18n="locDining">Essen &amp; Cafés</span>
+          </h3>
+          <ul class="location__list">
+            <li>La Baracca <span class="location__time">8 min</span></li>
+            <li>Suka Espresso <span class="location__time">9 min</span></li>
+            <li>The Loft <span class="location__time">9 min</span></li>
+            <li>Drifter Cafe <span class="location__time">10 min</span></li>
+            <li>Single Fin <span class="location__time">12 min</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews section section--alt" id="reviews">
+    <div class="container">
+      <h2 class="section__title" data-i18n="reviewsTitle">Bewertungen</h2>
+      <div class="reviews__rating">
+        <span class="reviews__score">4.69</span>
+        <div class="reviews__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span class="reviews__count" data-i18n="reviewsCount">16 Bewertungen auf Airbnb</span>
+      </div>
+      <div class="reviews__carousel" id="reviewsCarousel">
+        <button class="reviews__arrow reviews__arrow--prev" id="reviewPrev" aria-label="Previous">&#10094;</button>
+        <div class="reviews__track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text" data-i18n="review1">Traumhafte Villa mit wunderschönem Meerblick. Moderner Stil, großzügig geschnitten. Der private Pool war unser Highlight. Wir kommen wieder!</p>
+            <span class="review-card__author">— Jonathan Elijah</span>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text" data-i18n="review2">Ein absoluter Traum! Atemberaubender Meerblick, stilvolles Design, erstklassige Annehmlichkeiten. Alles super sauber und gepflegt. Sehr zu empfehlen!</p>
+            <span class="review-card__author">— Kerstin</span>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text" data-i18n="review3">Schöner Aufenthalt in den Höhen von Uluwatu mit Blick auf das Meer. Großes, gemütliches Haus, warmer Pool. Flexibler Gastgeber. Sehr empfehlenswert!</p>
+            <span class="review-card__author">— Lena</span>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-card__text" data-i18n="review4">Großartige Unterkunft mit riesigen Zimmern und Wohnzimmer. Perfekt zum Entspannen und die Aussicht zu genießen.</p>
+            <span class="review-card__author">— Elizabeth</span>
+          </div>
+        </div>
+        <button class="reviews__arrow reviews__arrow--next" id="reviewNext" aria-label="Next">&#10095;</button>
+      </div>
+      <div class="reviews__dots" id="reviewDots"></div>
+      <a href="https://www.airbnb.de/rooms/1451115331863837326" target="_blank" rel="noopener" class="reviews__link" data-i18n="reviewsLink">Alle Bewertungen auf Airbnb lesen &rarr;</a>
+    </div>
+  </section>
+
+  <!-- CTA / Booking -->
+  <section class="cta" id="booking">
+    <div class="cta__bg" style="background-image: url('Fotos/Balkon/83f34ae5-8fbb-416b-a509-1621ef8d6c6d.avif')"></div>
+    <div class="cta__overlay"></div>
+    <div class="cta__content">
+      <h2 class="cta__title" data-i18n="ctaTitle">Bereit für deinen Bali-Traum?</h2>
+      <a href="https://www.airbnb.de/rooms/1451115331863837326" target="_blank" rel="noopener" class="btn btn--primary btn--large" data-i18n="ctaBtn">Auf Airbnb buchen</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">Ahimsa Villa Uluwatu</span>
+        <span class="footer__managed" data-i18n="footerManaged">Managed by House of Reservations</span>
+      </div>
+      <div class="footer__lang">
+        <button class="footer__lang-btn" data-lang="de">DE</button>
+        <span>|</span>
+        <button class="footer__lang-btn" data-lang="en">EN</button>
+      </div>
+      <span class="footer__copy">&copy; 2026 Ahimsa Villa</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
