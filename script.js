@@ -244,12 +244,25 @@ var navEl = document.getElementById('nav');
 var hamburgerBtn = document.getElementById('hamburger');
 var navLinksEl = document.getElementById('navLinks');
 
-// Scroll: add/remove nav--scrolled class
+// Scroll: nav + parallax hero
+var heroBg = document.querySelector('.hero__bg');
+var heroContent = document.querySelector('.hero__content');
+
 window.addEventListener('scroll', function() {
-  if (window.scrollY > 50) {
+  var scrollY = window.scrollY;
+
+  // Nav scrolled state
+  if (scrollY > 50) {
     navEl.classList.add('nav--scrolled');
   } else {
     navEl.classList.remove('nav--scrolled');
+  }
+
+  // Parallax hero (only when hero is visible)
+  if (scrollY < window.innerHeight) {
+    heroBg.style.transform = 'scale(1.05) translateY(' + (scrollY * 0.3) + 'px)';
+    heroContent.style.transform = 'translateY(' + (scrollY * 0.15) + 'px)';
+    heroContent.style.opacity = 1 - (scrollY / (window.innerHeight * 0.8));
   }
 });
 
