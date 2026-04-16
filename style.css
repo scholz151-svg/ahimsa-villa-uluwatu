@@ -1258,6 +1258,102 @@ button {
 }
 
 /* ────────────────────────────────────────────
+   ACCESSIBILITY
+   ──────────────────────────────────────────── */
+
+/* Keyboard focus ring */
+:focus-visible {
+  outline: 3px solid var(--terracotta);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.btn--glass:focus-visible,
+.lightbox__close:focus-visible,
+.lightbox__prev:focus-visible,
+.lightbox__next:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 3px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero__bg {
+    transform: none !important;
+  }
+  .hero__content {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .fade-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ────────────────────────────────────────────
+   BACK TO TOP BUTTON
+   ──────────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(245, 240, 232, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--charcoal);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 900;
+}
+
+.back-to-top--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ────────────────────────────────────────────
+   FOOTER INSTAGRAM LINK
+   ──────────────────────────────────────────── */
+.footer__instagram {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  margin-top: 6px;
+  transition: color var(--transition-base);
+}
+
+.footer__instagram:hover {
+  color: var(--white);
+}
+
+.footer__instagram svg {
+  flex-shrink: 0;
+}
+
+/* ────────────────────────────────────────────
    14. RESPONSIVE — TABLET (≤ 1024px)
    ──────────────────────────────────────────── */
 @media (max-width: 1024px) {

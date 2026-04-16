@@ -253,6 +253,8 @@ var navLinksEl = document.getElementById('navLinks');
 // Scroll: nav + parallax hero
 var heroBg = document.querySelector('.hero__bg');
 var heroContent = document.querySelector('.hero__content');
+var backToTopBtn = document.getElementById('backToTop');
+var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 window.addEventListener('scroll', function() {
   var scrollY = window.scrollY;
@@ -264,18 +266,24 @@ window.addEventListener('scroll', function() {
     navEl.classList.remove('nav--scrolled');
   }
 
-  // Parallax hero (only when hero is visible)
-  if (scrollY < window.innerHeight) {
+  // Parallax hero (only when hero is visible and motion not reduced)
+  if (!prefersReducedMotion && scrollY < window.innerHeight) {
     heroBg.style.transform = 'scale(1.05) translateY(' + (scrollY * 0.3) + 'px)';
     heroContent.style.transform = 'translateY(' + (scrollY * 0.15) + 'px)';
     heroContent.style.opacity = 1 - (scrollY / (window.innerHeight * 0.8));
+  }
+
+  // Back to top button
+  if (backToTopBtn) {
+    backToTopBtn.classList.toggle('back-to-top--visible', scrollY > 600);
   }
 });
 
 // Hamburger toggle
 if (hamburgerBtn) {
   hamburgerBtn.addEventListener('click', function() {
-    navLinksEl.classList.toggle('nav__links--open');
+    var isOpen = navLinksEl.classList.toggle('nav__links--open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 }
 
@@ -443,7 +451,7 @@ function renderGallery(tab) {
 
       var img = document.createElement('img');
       img.src = currentImages[index];
-      img.alt = tab + ' ' + (index + 1);
+      img.alt = 'Ahimsa Villa Uluwatu – ' + tab + ', Foto ' + (index + 1);
       img.loading = 'lazy';
 
       item.appendChild(img);
@@ -659,7 +667,16 @@ document.querySelectorAll('.modal__backdrop').forEach(function(backdrop) {
 });
 
 /* ============================================================
-   10. INIT
+   10. BACK TO TOP
+   ============================================================ */
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/* ============================================================
+   11. INIT
    ============================================================ */
 setLanguage(currentLang);
 renderGallery('Pool');

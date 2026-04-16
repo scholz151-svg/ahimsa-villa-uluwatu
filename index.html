@@ -3,13 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahimsa Villa Uluwatu — Bali</title>
-  <meta name="description" content="5-Zimmer-Villa mit atemberaubendem Meerblick in Uluwatu, Bali. Privatpool, 10 Gäste, tropisches Paradies.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#C67B5C">
+  <title>Ahimsa Villa Uluwatu | 5-Zimmer Ferienvilla mit Pool &amp; Meerblick, Bali</title>
+  <meta name="description" content="5-Zimmer-Villa mit Privatpool &amp; Panorama-Meerblick in Uluwatu, Bali. Platz f&uuml;r 10 G&auml;ste. Jetzt auf Airbnb buchen!">
+  <link rel="canonical" href="https://ahimsa-villa.com/">
+  <link rel="alternate" hreflang="de" href="https://ahimsa-villa.com/">
+  <link rel="alternate" hreflang="en" href="https://ahimsa-villa.com/">
+  <link rel="alternate" hreflang="x-default" href="https://ahimsa-villa.com/">
+  <!-- Open Graph -->
   <meta property="og:title" content="Ahimsa Villa Uluwatu — Bali">
-  <meta property="og:description" content="5-Bedroom villa with stunning ocean views in Uluwatu, Bali. Private pool, 10 guests.">
-  <meta property="og:image" content="Fotos/Pool/677680f4-77d4-4486-b2b5-eb1434075351.avif">
+  <meta property="og:description" content="5-bedroom ocean-view villa in Uluwatu, Bali. Private pool, 10 guests.">
+  <meta property="og:image" content="https://ahimsa-villa.com/Fotos/Pool/677680f4-77d4-4486-b2b5-eb1434075351.avif">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ahimsa-villa.com/">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Ahimsa Villa Uluwatu">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ahimsa Villa Uluwatu — Bali">
+  <meta name="twitter:description" content="5-bedroom ocean-view villa in Uluwatu, Bali. Private pool, 10 guests.">
+  <meta name="twitter:image" content="https://ahimsa-villa.com/Fotos/Pool/677680f4-77d4-4486-b2b5-eb1434075351.avif">
+  <!-- Favicon + Preload -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preload" as="image" type="image/avif" href="Fotos/Pool/345b7fbf-2eb4-4007-9d81-43dfd5feb8eb.avif" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -21,7 +39,7 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo">Ahimsa Villa</a>
-      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <button class="nav__hamburger" id="hamburger" aria-label="Navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
         <span></span>
@@ -40,6 +58,8 @@
       </button>
     </div>
   </nav>
+
+  <main id="main-content">
 
   <!-- Hero -->
   <section class="hero" id="hero">
@@ -184,7 +204,7 @@
   <section class="gallery section section--alt" id="gallery">
     <div class="container">
       <h2 class="section__title" data-i18n="galleryTitle">Galerie</h2>
-      <div class="gallery__tabs" id="galleryTabs">
+      <div class="gallery__tabs" id="galleryTabs" role="tablist" aria-label="Gallery categories">
         <button class="gallery__tab gallery__tab--active" data-tab="Pool" data-i18n="tabPool">Pool</button>
         <button class="gallery__tab" data-tab="Schlafzimmer 1" data-i18n="tabBed1">Schlafzimmer 1</button>
         <button class="gallery__tab" data-tab="Schlafzimmer 2" data-i18n="tabBed2">Schlafzimmer 2</button>
@@ -343,25 +363,25 @@
         <div class="reviews__track" id="reviewsTrack">
           <div class="review-card">
             <span class="review-card__quote">&ldquo;</span>
-            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-card__stars" aria-label="5 von 5 Sternen">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <p class="review-card__text" data-i18n="review1">Traumhafte Villa mit wunderschönem Meerblick. Moderner Stil, großzügig geschnitten. Der private Pool war unser Highlight. Wir kommen wieder!</p>
             <span class="review-card__author">— Jonathan Elijah</span>
           </div>
           <div class="review-card">
             <span class="review-card__quote">&ldquo;</span>
-            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-card__stars" aria-label="5 von 5 Sternen">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <p class="review-card__text" data-i18n="review2">Ein absoluter Traum! Atemberaubender Meerblick, stilvolles Design, erstklassige Annehmlichkeiten. Alles super sauber und gepflegt. Sehr zu empfehlen!</p>
             <span class="review-card__author">— Kerstin</span>
           </div>
           <div class="review-card">
             <span class="review-card__quote">&ldquo;</span>
-            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-card__stars" aria-label="5 von 5 Sternen">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <p class="review-card__text" data-i18n="review3">Schöner Aufenthalt in den Höhen von Uluwatu mit Blick auf das Meer. Großes, gemütliches Haus, warmer Pool. Flexibler Gastgeber. Sehr empfehlenswert!</p>
             <span class="review-card__author">— Lena</span>
           </div>
           <div class="review-card">
             <span class="review-card__quote">&ldquo;</span>
-            <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-card__stars" aria-label="4 von 5 Sternen">&#9733;&#9733;&#9733;&#9733;</div>
             <p class="review-card__text" data-i18n="review4">Großartige Unterkunft mit riesigen Zimmern und Wohnzimmer. Perfekt zum Entspannen und die Aussicht zu genießen.</p>
             <span class="review-card__author">— Elizabeth</span>
           </div>
@@ -383,12 +403,18 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
         <span class="footer__name">Ahimsa Villa Uluwatu</span>
         <span class="footer__managed" data-i18n="footerManaged">Managed by House of Reservations</span>
+        <a href="https://www.instagram.com/ahimsa_villa_bali/" target="_blank" rel="noopener" class="footer__instagram" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          @ahimsa_villa_bali
+        </a>
       </div>
       <div class="footer__lang">
         <button class="footer__lang-btn" data-lang="de">DE</button>
@@ -405,11 +431,11 @@
   </footer>
 
   <!-- Impressum Modal -->
-  <div class="modal" id="impressum">
+  <div class="modal" id="impressum" role="dialog" aria-modal="true" aria-labelledby="impressum-title">
     <div class="modal__backdrop"></div>
     <div class="modal__content">
-      <button class="modal__close">&times;</button>
-      <h2 class="modal__title">Impressum</h2>
+      <button class="modal__close" aria-label="Schlie&szlig;en">&times;</button>
+      <h2 class="modal__title" id="impressum-title">Impressum</h2>
       <p><b>Angaben gem&auml;&szlig; &sect; 5 TMG:</b></p>
       <p>
         <!-- TODO: Echte Daten einsetzen -->
@@ -433,11 +459,11 @@
   </div>
 
   <!-- Datenschutz Modal -->
-  <div class="modal" id="datenschutz">
+  <div class="modal" id="datenschutz" role="dialog" aria-modal="true" aria-labelledby="datenschutz-title">
     <div class="modal__backdrop"></div>
     <div class="modal__content">
-      <button class="modal__close">&times;</button>
-      <h2 class="modal__title" data-i18n="privacyTitle">Datenschutzerkl&auml;rung</h2>
+      <button class="modal__close" aria-label="Schlie&szlig;en">&times;</button>
+      <h2 class="modal__title" id="datenschutz-title" data-i18n="privacyTitle">Datenschutzerkl&auml;rung</h2>
 
       <h3>1. Verantwortlicher</h3>
       <p>Vorname Nachname, Stra&szlig;e Hausnummer, PLZ Ort, Deutschland<br>E-Mail: info@ahimsa-villa.com</p>
@@ -464,6 +490,53 @@
       <p>Sie haben das Recht auf Auskunft, Berichtigung, L&ouml;schung, Einschr&auml;nkung der Verarbeitung, Daten&uuml;bertragbarkeit und Widerspruch. Kontakt: info@ahimsa-villa.com</p>
     </div>
   </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Ahimsa Villa Uluwatu",
+    "description": "5-bedroom villa with panoramic ocean views in Uluwatu, Bali. Private pool, 10 guests.",
+    "url": "https://ahimsa-villa.com/",
+    "image": "https://ahimsa-villa.com/Fotos/Pool/345b7fbf-2eb4-4007-9d81-43dfd5feb8eb.avif",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Uluwatu",
+      "addressRegion": "Bali",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -8.82,
+      "longitude": 115.06
+    },
+    "numberOfRooms": 5,
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Private Pool", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Ocean View", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Daily Housekeeping", "value": true}
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.69",
+      "bestRating": "5",
+      "reviewCount": "16"
+    },
+    "sameAs": [
+      "https://www.instagram.com/ahimsa_villa_bali/",
+      "https://www.airbnb.de/rooms/1451115331863837326"
+    ]
+  }
+  </script>
 
   <script src="script.js"></script>
 </body>
