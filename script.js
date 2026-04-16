@@ -85,7 +85,10 @@ var translations = {
     reviewsLink:  'Alle Bewertungen auf Airbnb lesen →',
     ctaTitle:     'Bereit für deinen Bali-Traum?',
     ctaBtn:       'Auf Airbnb buchen',
-    footerManaged:'Managed by House of Reservations'
+    footerManaged:'Managed by House of Reservations',
+    footerImprint:'Impressum',
+    footerPrivacy:'Datenschutz',
+    privacyTitle: 'Datenschutzerkl\u00e4rung'
   },
   en: {
     navAbout:    'About',
@@ -164,7 +167,10 @@ var translations = {
     reviewsLink:  'Read all reviews on Airbnb →',
     ctaTitle:     'Ready for your Bali dream?',
     ctaBtn:       'Book on Airbnb',
-    footerManaged:'Managed by House of Reservations'
+    footerManaged:'Managed by House of Reservations',
+    footerImprint:'Legal Notice',
+    footerPrivacy:'Privacy Policy',
+    privacyTitle: 'Privacy Policy'
   }
 };
 
@@ -638,7 +644,22 @@ if (reviewsCarouselEl) {
 }
 
 /* ============================================================
-   9. INIT
+   9. LEGAL MODALS
+   ============================================================ */
+document.querySelectorAll('.modal__close').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    window.location.hash = '';
+  });
+});
+
+document.querySelectorAll('.modal__backdrop').forEach(function(backdrop) {
+  backdrop.addEventListener('click', function() {
+    window.location.hash = '';
+  });
+});
+
+/* ============================================================
+   10. INIT
    ============================================================ */
 setLanguage(currentLang);
 renderGallery('Pool');
