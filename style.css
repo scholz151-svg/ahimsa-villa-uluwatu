@@ -1079,6 +1079,11 @@ button {
   margin-bottom: -1px;
 }
 
+.wave-divider--up {
+  margin-top: 0;
+  margin-bottom: -1px;
+}
+
 /* Animated waves */
 .wave {
   animation: wave-drift 8s ease-in-out infinite alternate;
